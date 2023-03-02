@@ -27,7 +27,13 @@ dependencies {
 
 	annotationProcessor ("org.springframework.boot:spring-boot-configuration-processor")
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-oauth2-resource-server
-	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server:3.0.3")
+	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
+//	implementation ("org.springframework.boot:spring-boot-starter-oauth2-resource-client")
+
+	// https://mvnrepository.com/artifact/org.keycloak/keycloak-spring-boot-starter
+//	implementation("org.keycloak:keycloak-spring-boot-starter:21.0.0")
+
+
 }
 
 tasks.withType<KotlinCompile> {

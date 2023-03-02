@@ -3,6 +3,17 @@ spring:
     name: springboot-keycloak
   security:
     oauth2:
+      client:
+        registration:
+            keycloak:
+                client-id: vis-backend
+                authorization-grant-type: authorization_code
+                scope: openid
+                client-secret: yUZug8Bd8gKsibuZdriEcKajXGDrzJWd
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8080/realms/7vis
+            user-name-attribute: preferred_username
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8080/realms/7vis
